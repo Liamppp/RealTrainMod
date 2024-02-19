@@ -8,7 +8,7 @@
 importPackage(Packages.jp.ngt.rtm);
 importPackage(Packages.net.minecraft.util);
 
-function doThat(tile, train, first) { 
+function play(tile, train, first) { 
     if (first) 
     {
         const sound = ["sound_nopkr", "train.rtm_jesus"];
