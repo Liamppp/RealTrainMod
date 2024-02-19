@@ -9,11 +9,11 @@ importPackage(Packages.net.minecraft.util);
 function doThat(tile, train, first) { 
     if (first) 
     {
-        var sa = ["sound_nopkr", "train.rtm_Springshower"];
-        var entries = train.getFormation().entries;
-        for (var i = 0; i < entries.length; i++) 
+        const sound = ["sound_nopkr", "train.rtm_Springshower"];
+        const entries = train.getFormation().entries;
+        for (let i = 0; i < entries.length; i++) 
         {
-            RTMCore.proxy.playSound(entries[i].train, new ResourceLocation(sa[0], sa[1]), 1.0, 1.0);
+            RTMCore.proxy.playSound(entries[i].train, new ResourceLocation(sound[0], sound[1]), 1.0, 1.0);
         }
     }
 }
