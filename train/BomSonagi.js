@@ -1,6 +1,8 @@
 /**
  * https://ntws.kr/modelpack/detail/?pack_code=nopk
  * sound_nopkr/train/rtm_Springshower
+ * 
+ * 주석 처리된 곳은 제외하고 복사할 것
  */
 
 importPackage(Packages.jp.ngt.rtm);
