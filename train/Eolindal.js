@@ -8,13 +8,11 @@
 importPackage(Packages.jp.ngt.rtm);
 importPackage(Packages.net.minecraft.util);
 
-function play(tile, train, first) { 
-    if (first) 
-    {
+function doThat(tile, train, first) {
+    if (first) {
         const sound = ["sound_nopkr", "train.rtm_Eolindal"];
         const entries = train.getFormation().entries;
-        for (let i = 0; i < entries.length; i++) 
-        {
+        for (let i = 0; i < entries.length; i++) {
             RTMCore.proxy.playSound(entries[i].train, new ResourceLocation(sound[0], sound[1]), 1.0, 1.0);
         }
     }
